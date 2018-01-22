@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptoLib
 
 class FirstViewController: UIViewController {
 

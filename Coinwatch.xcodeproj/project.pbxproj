@@ -15,6 +15,7 @@
 		DD203AC3201647750085DC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD203AC1201647750085DC74 /* LaunchScreen.storyboard */; };
 		DD203ACE201647750085DC74 /* CoinwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD203ACD201647750085DC74 /* CoinwatchTests.swift */; };
 		DD203AD9201647750085DC74 /* CoinwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD203AD8201647750085DC74 /* CoinwatchUITests.swift */; };
+		DD203AF32016487F0085DC74 /* CryptoLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD203AF0201648780085DC74 /* CryptoLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = DD203AB2201647740085DC74;
 			remoteInfo = Coinwatch;
+		};
+		DD203AED201648780085DC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD203AE6201648780085DC74 /* Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Dependencies::Dependencies::Product";
+			remoteInfo = Dependencies;
+		};
+		DD203AEF201648780085DC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD203AE6201648780085DC74 /* Dependencies.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "CryptoLib::CryptoLib::Product";
+			remoteInfo = CryptoLib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,6 +64,7 @@
 		DD203AD4201647750085DC74 /* CoinwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD203AD8201647750085DC74 /* CoinwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinwatchUITests.swift; sourceTree = "<group>"; };
 		DD203ADA201647750085DC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD203AE6201648780085DC74 /* Dependencies.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Dependencies.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD203AF32016487F0085DC74 /* CryptoLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +96,12 @@
 		DD203AAA201647740085DC74 = {
 			isa = PBXGroup;
 			children = (
+				DD203AE6201648780085DC74 /* Dependencies.xcodeproj */,
 				DD203AB5201647740085DC74 /* Coinwatch */,
 				DD203ACC201647750085DC74 /* CoinwatchTests */,
 				DD203AD7201647750085DC74 /* CoinwatchUITests */,
 				DD203AB4201647740085DC74 /* Products */,
+				DD203AF22016487F0085DC74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +145,22 @@
 				DD203ADA201647750085DC74 /* Info.plist */,
 			);
 			path = CoinwatchUITests;
+			sourceTree = "<group>";
+		};
+		DD203AE7201648780085DC74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD203AEE201648780085DC74 /* Dependencies.framework */,
+				DD203AF0201648780085DC74 /* CryptoLib.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD203AF22016487F0085DC74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +256,12 @@
 			mainGroup = DD203AAA201647740085DC74;
 			productRefGroup = DD203AB4201647740085DC74 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DD203AE7201648780085DC74 /* Products */;
+					ProjectRef = DD203AE6201648780085DC74 /* Dependencies.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD203AB2201647740085DC74 /* Coinwatch */,
@@ -229,6 +270,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DD203AEE201648780085DC74 /* Dependencies.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Dependencies.framework;
+			remoteRef = DD203AED201648780085DC74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD203AF0201648780085DC74 /* CryptoLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoLib.framework;
+			remoteRef = DD203AEF201648780085DC74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD203AB1201647740085DC74 /* Resources */ = {
