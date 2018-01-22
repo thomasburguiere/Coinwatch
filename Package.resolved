@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CryptoLib",
+        "repositoryURL": "/Users/taabuth3/Documents/workspace/perso/swift/crypto/Cryptolib",
+        "state": {
+          "branch": null,
+          "revision": "d3524eea96829ad99b026f41428661064d04ac6c",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
