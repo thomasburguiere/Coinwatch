@@ -6,8 +6,53 @@
         "repositoryURL": "/Users/thomas/Documents/workspace/perso/swift/Crypto/Cryptolib",
         "state": {
           "branch": null,
-          "revision": "d3524eea96829ad99b026f41428661064d04ac6c",
-          "version": "0.0.1"
+          "revision": "830bfaaab2e6a38f143b642089509a2eda875697",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "3e848781c7756accced855a6317a4c2ff5e8588b",
+          "version": "4.1.2"
+        }
+      },
+      {
+        "package": "SSCZLib",
+        "repositoryURL": "https://github.com/daltoniam/zlib-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "83ac8d719a2f3aa775dbdf116a57f56fb2c49abb",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "SSCommonCrypto",
+        "repositoryURL": "https://github.com/daltoniam/common-crypto-spm",
+        "state": {
+          "branch": null,
+          "revision": "2eb3aff0fb57f92f5722fac5d6d20bf64669ca66",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "SocketIO",
+        "repositoryURL": "https://github.com/socketio/socket.io-client-swift",
+        "state": {
+          "branch": null,
+          "revision": "d388e1cf037d4dad1a91a6a67ad3bcdd9185d7f3",
+          "version": "13.1.1"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream",
+        "state": {
+          "branch": null,
+          "revision": "6e10c04c8387d00f41a17450fa45b51427971022",
+          "version": "3.0.4"
         }
       }
     ]
